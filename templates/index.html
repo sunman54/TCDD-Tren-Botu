@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Search</title>
+</head>
+<body>
+    <h1>Train Search</h1>
+    <form action="/search" method="post">
+        <label for="tarih">Date:</label>
+        <input type="date" id="tarih" name="tarih" pattern="\d{2}.\d{2}.\d{4}" required><br><br>
+        <label for="nereden">Departure:</label>
+        <input type="text" id="nereden" name="nereden" required><br><br>
+        <label for="nereye">Arrival:</label>
+        <input type="text" id="nereye" name="nereye" required><br><br>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

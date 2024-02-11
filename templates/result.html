@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <table border="1">
+        <tr>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Wagon</th>
+            <th>Price</th>
+        </tr>
+        {% for train in trains %}
+        <tr>
+            <td>{{ train.0 }}</td>
+            <td>{{ train.1 }}</td>
+            <td>{{ train.2 }}</td>
+            <td>{{ train.3 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
